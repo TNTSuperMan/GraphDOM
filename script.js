@@ -1,8 +1,9 @@
+(()=>{
 const $ = GraphDom;
-let p = $.fromDoc("p");
+const p = $("p");
 p.text = "ま～るをえ～がくあやしい文字～♪";
 p.color = "#0000FF";
-p.color;
+p.width = "auto";
 let count = 0;
 const handler = e => {
     count++;
@@ -11,4 +12,4 @@ const handler = e => {
     p.rotate++
     setTimeout(handler,10)
 }
-handler()
+handler()})()
